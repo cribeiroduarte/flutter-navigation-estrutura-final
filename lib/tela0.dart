@@ -17,7 +17,7 @@ class Tela0 extends StatelessWidget {
               ),
               child: Text('Ir para a tela 1'),
               onPressed: () {
-                //Navegar para a tela 1
+                Navigator.pushNamed(context, '/primeira');
               },
             ),
             ElevatedButton(
@@ -26,7 +26,7 @@ class Tela0 extends StatelessWidget {
               ),
               child: Text('Ir para a tela 2'),
               onPressed: () {
-                //Navegar para a tela 2
+                Navigator.pushNamed(context, '/segunda');
               },
             ),
           ],

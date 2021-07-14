@@ -14,7 +14,9 @@ class Tela2 extends StatelessWidget {
             primary: Colors.teal,
           ),
           child: Text('Voltar para a tela 1'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
     );

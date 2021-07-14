@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'tela2.dart';
+
 class Tela1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,16 @@ class Tela1 extends StatelessWidget {
             primary: Colors.orange,
           ),
           child: Text('Ir para a tela 2'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return Tela2();
+                },
+              ),
+            );
+          },
         ),
       ),
     );
